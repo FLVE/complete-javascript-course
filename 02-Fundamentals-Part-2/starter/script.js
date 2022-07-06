@@ -175,6 +175,7 @@ console.log(friends.includes(23));
 
 
 // 4、object
+/*
 const jonasArray = [
   'Jonas',
   'Schmedtmann',
@@ -218,3 +219,38 @@ console.log(jonas);
 
 
 console.log(`${jonas.firstName} has ${jonas.friedns.length} friends, and his best friends is called ${jonas.friedns[0]}`);
+
+
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  birthYeah: 1991,
+  job: 'teacher',
+  friedns: ['Micheal', 'Peter', 'Steven'],
+  hasFriversLicense: true,
+
+  // calcAge: function (birthYeah) {
+  //   return 2037 - birthYeah;
+  // }
+  // calcAge: function () {
+  //   // console.log(this)
+  //   return 2037 - this.birthYeah;
+  // }
+  calcAge: function () {
+    this.age = 2037 - this.birthYeah;
+    console.log(this.age)
+    return this.age;
+  }
+};
+
+const calcAge = function (birthYeah) {
+  return 2037 - birthYeah;
+}
+
+// console.log(jonas.calcAge(1991));
+// console.log(jonas['calcAge'](1991));
+console.log(jonas.calcAge());
+console.log(jonas);
+console.log(jonas.age);
+console.log(jonas.age);
+*/
