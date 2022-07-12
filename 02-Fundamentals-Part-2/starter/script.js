@@ -254,3 +254,93 @@ console.log(jonas);
 console.log(jonas.age);
 console.log(jonas.age);
 */
+
+// 5、loop
+/*
+console.log('Lifting weights repetition1')
+console.log('Lifting weights repetition2')
+console.log('Lifting weights repetition3')
+console.log('Lifting weights repetition4')
+console.log('Lifting weights repetition5')
+console.log('Lifting weights repetition6')
+console.log('Lifting weights repetition7')
+console.log('Lifting weights repetition8')
+console.log('Lifting weights repetition9')
+console.log('Lifting weights repetition10')
+
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log('Lifting weights repetition', rep)
+}
+
+
+const jonas = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991,
+  'teacher',
+  ['Michael', 'Peter', 'Steven'],
+  true
+];
+
+
+const types = [];
+
+for (let i = 0; i < jonas.length; i++) {
+  console.log(jonas[i], typeof jonas[i]);
+
+  // types[i] = typeof Jonas[i];
+  types.push(typeof jonas[i])
+}
+console.log(types)
+// types[0] = 'string';
+
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages[i] = 2037 - years[i];
+}
+console.log(ages);
+
+// continue & break
+
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] !== 'string') continue;
+  console.log(jonas[i], typeof jonas[i]);
+
+  // types[i] = typeof Jonas[i];
+  types.push(typeof jonas[i])
+}
+
+
+
+const jonas = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991,
+  'teacher',
+  ['Michael', 'Peter', 'Steven'],
+  true
+];
+
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+  console.log(i, jonas[i]);
+}
+*/
+
+// 6、while loop
+
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log('Lifting weights repetition', rep)
+}
+
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`WHILE: Lifting weights repetition ${rep}`)
+  rep++;
+}
